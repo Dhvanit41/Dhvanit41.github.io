@@ -45,7 +45,7 @@ const skillsSection = {
       `⚡ Believes in the "Hands-On Experience" approach`
     ),
     emoji(
-      `⚡ Intrest in creating products and working with trending techs like creating Decentralized apps, ML and Big Data .`
+      `⚡ Interest in creating products and working with trending techs like creating Decentralized apps, ML and Big Data .`
     ),
     emoji(
       `⚡ Competitive programmer with a demonstrated history of solving problems in DSA .`
