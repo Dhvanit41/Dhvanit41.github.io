@@ -23,7 +23,6 @@ jobs:
         run: |
           npm install
           npm run build
-          npm run -g serve
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
