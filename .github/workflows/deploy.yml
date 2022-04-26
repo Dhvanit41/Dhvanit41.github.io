@@ -1,20 +1,13 @@
 name: Build and Deploy
-env:
-  CI: false
-  GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_TOKEN }} # This is automatically set by Github Actions
-  USE_GITHUB_DATA: "true"
 on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
@@ -23,7 +16,7 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN : ${{ secrets.PORTFOLIO_GITHUB_TOKEN }} # This is provided by GitHub.
