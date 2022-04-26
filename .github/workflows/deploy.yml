@@ -2,12 +2,12 @@ name: Build and Deploy
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_TOKEN }} # This is automatically set by Github Actions
   USE_GITHUB_DATA: "true"
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 jobs:
@@ -26,6 +26,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
+          GITHUB_TOKEN : ${{ secrets.PORTFOLIO_GITHUB_TOKEN }} # This is provided by GitHub.
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
