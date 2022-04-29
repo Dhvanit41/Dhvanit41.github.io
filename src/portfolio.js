@@ -14,7 +14,7 @@ const greeting = {
   username: "Dhvanit",
   title: "Hi all, I'm Dhvanit",
   subTitle: emoji(
-    "A passionate Back-end Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / NodeJs / NestJs / Web3 / Python and some other cool libraries and frameworks."
+    "A passionate Back-end Engineer 🚀 having an experience of building Web and Mobile applications with JavaScript / NodeJs / NestJs / Web3 / Python and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1UUzf1tZH7okIXHC6AtIZdcsL7CcTSov1/view?usp=sharing", // Set to empty to hide the button
