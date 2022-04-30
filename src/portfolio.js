@@ -60,16 +60,12 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "NodeJs / NestJS",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "NodeJs / NestJS",
-      fontAwesomeClassname: "fab fa-node"
     },
     {
       skillName: "BitCoin",
@@ -102,8 +98,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
-
+    },
+    {
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
