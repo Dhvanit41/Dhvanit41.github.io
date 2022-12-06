@@ -159,7 +159,7 @@ const workExperiences = {
       role: "Backend Developer",
       company: "GEVME ( Singapore )",
       companylogo: require("./assets/images/Gevmelogo.png"),
-      date: "Sept 2021 – sept 2022",
+      date: "Sept 2021 – Sept 2022",
       desc: "GEVME is a flexible platform used by event professionals to build and manage custom virtual experiences",
       descBullets: [
         "Working as a Senior devloper to create Virtual platform.",
